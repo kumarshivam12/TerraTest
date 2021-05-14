@@ -1,5 +1,6 @@
 data "terraform_remote_state" "vpc" {
   backend = "local"
+  workspace = "TerraTest"
 
   config = {
     path = "../networking/terraform.tfstate"
